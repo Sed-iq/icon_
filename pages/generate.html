@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Icon - Generate</title>
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="shortcut icon" href="/public/logo.png" type="image/x-icon" />
+  </head>
+  <body class="min-h-screen">
+    <div
+      class="bg-green-900 fixed flex justify-center font-semibold items-center text-white w-full h-[66px]"
+    >
+      <div class="flex-[5]">
+        <img src="/public/logo.png" class="w-[80px]" alt="" />
+      </div>
+      <p>Admin Dashboard</p>
+      <div class="flex-[5]"></div>
+    </div>
+    <div class="h-screen flex justify-center items-center">
+      <div class="bg-[#ececec] drop-shadow-lg w-[400px] h-[380px] rounded-xl">
+        <div class="flex roboto mt-4 justify-center p-4">
+          <p class="text-center">
+            Generate <br />
+            Admin ID
+          </p>
+        </div>
+        <div class="flex input mt-5 justify-center">
+          <div class="flex flex-col space-y-2 w-[80%]">
+            <p class="text-xs roboto text-gray-500">Email:</p>
+            <input
+              type="email"
+              class="w-full h-[45px] text-sm px-3 outline-none border-2 rounded border-gray-300 bg-transparent"
+            />
+          </div>
+        </div>
+
+        <div class="flex mt-5 input justify-center">
+          <div class="flex flex-col space-y-2 w-[80%]">
+            <p class="text-xs roboto text-gray-500">Phone Number:</p>
+            <input
+              type="text"
+              class="w-full h-[45px] text-sm px-3 outline-none border-2 rounded border-gray-300 bg-transparent"
+            />
+          </div>
+        </div>
+
+        <div class="w-full mt-[2.3em] flex justify-center">
+          <button
+            id="go"
+            class="w-[130px] hover:bg-green-900 duration-150 p-2.5 text-sm rounded text-white bg-green-800"
+          >
+            Generate Code
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    const go = document.querySelector("#go");
+    const input = document.querySelectorAll(".input");
+    go.addEventListener("click", (e) => {
+      input.forEach((x) => (x.innerHTML = ""));
+      e.target.innerText = "Code Sent!";
+      setTimeout(() => (location = "/pages/apply.html"), 1006);
+    });
+  </script>
+</html>

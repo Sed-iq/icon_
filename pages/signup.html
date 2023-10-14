@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Icon - Enter Details</title>
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="shortcut icon" href="/public/logo.png" type="image/x-icon" />
+  </head>
+  <body class="h-screen">
+    <div
+      class="bg-green-700 sm:fixed top-0 flex justify-center items-center font-semibold text-white w-full h-[66px]"
+    >
+      <div class="flex-[5]">
+        <img src="/public/logo.png" class="w-[80px]" alt="" />
+      </div>
+      <p>Enter Details</p>
+      <div class="flex-[5]"></div>
+    </div>
+    <div class="sm:flex sm:mt-4 h-full border-red justify-center items-center">
+      <div
+        class="sm:w-[80%] w-full pb-10 sm:flex sm:flex-row flex flex-col items-start justify-center sm:h-[80%]"
+      >
+        <!-- First part -->
+        <div class="sm:w-[70%] w-full">
+          <div class="p-3 w-[90%] flex flex-col items-center space-y-4">
+            <div class="w-full">
+              <div class="flex flex-col space-y-2">
+                <p class="text-xs roboto">ADMIN:</p>
+                <input
+                  type="text"
+                  class="w-full h-[45px] text-sm px-3 outline-none border-[1.2px] rounded border-gray-300 bg-transparent"
+                />
+              </div>
+            </div>
+
+            <div class="w-full">
+              <div class="flex flex-col space-y-2">
+                <p class="text-xs roboto">JOB DESCRIPTION:</p>
+                <input
+                  type="text"
+                  class="w-full h-[45px] text-sm px-3 outline-none border-[1.2px] rounded border-gray-300 bg-transparent"
+                />
+              </div>
+            </div>
+
+            <div class="w-full">
+              <div class="flex flex-col space-y-2">
+                <p class="text-xs roboto">EMAIL:</p>
+                <input
+                  type="email"
+                  class="w-full h-[45px] text-sm px-3 outline-none border-[1.2px] rounded border-gray-300 bg-transparent"
+                />
+              </div>
+            </div>
+
+            <div class="w-full">
+              <div class="flex sm:space-x-6">
+                <div class="flex w-[60px] flex-col space-y-2">
+                  <p class="text-xs roboto">Country:</p>
+                  <input
+                    type="number"
+                    class="w-full h-[45px] text-sm px-3 outline-none border-[1.2px] rounded border-gray-300 bg-transparent"
+                  />
+                </div>
+                <div class="flex w-[60px] flex-col space-y-2">
+                  <p class="text-xs roboto">Gender:</p>
+                  <select
+                    type="number"
+                    class="w-full text-xs h-[45px] outline-none px-3 border-[1.2px] rounded border-gray-300 bg-transparent"
+                  >
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="none">Non-Binary</option>
+                  </select>
+                </div>
+                <div class="flex flex-grow flex-col space-y-2">
+                  <p class="text-xs roboto">PHONE NUMBER</p>
+                  <div
+                    class="flex w-full rounded px-3 border-[1.2px] items-center"
+                  >
+                    <p class="text-xs">+234:</p>
+                    <input
+                      type="text"
+                      class="w-full h-[45px] outline-none text-xs px-3 rounded border-gray-300 bg-transparent"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="w-full">
+              <div class="flex flex-col space-y-2">
+                <p class="text-xs roboto">RECOVERY QUESTION</p>
+                <input
+                  type="text"
+                  class="w-full h-[45px] text-sm px-3 outline-none border-[1.2px] rounded border-gray-300 bg-transparent"
+                />
+              </div>
+            </div>
+
+            <div class="w-full">
+              <div class="flex flex-col space-y-2">
+                <p class="text-xs roboto">RECOVERY ANSWER</p>
+                <input
+                  type="text"
+                  class="w-full h-[45px] text-sm px-3 outline-none border-[1.2px] rounded border-gray-300 bg-transparent"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Second part -->
+        <div class="border-l-2 w-full sm:w-[80%] px-3 pt-3 h-auto">
+          <div class="sm:flex sm:flex-col items-center sm:space-y-3">
+            <div class="w-full">
+              <p class="text-sm opensans font-semibold">BIO</p>
+              <textarea
+                placeholder="Tell us something..."
+                class="resize-none sm:m-3 sm:mx-5 w-full h-[100px] sm:h-[129px] p-4 text-xs opensans outline-none sm:w-[100%] border-[1.2px] rounded border-gray-400"
+              ></textarea>
+            </div>
+
+            <div class="w-full">
+              <div class="flex flex-col space-y-2">
+                <p class="text-xs roboto">X LINK (FORMALLY TWITTER):</p>
+                <input
+                  type="url"
+                  class="w-full sm:m-3 sm:mx-5 h-[45px] text-sm px-3 outline-none border-[1.2px] rounded border-gray-300 bg-transparent"
+                />
+              </div>
+            </div>
+            <div class="w-full">
+              <div class="flex flex-col space-y-2">
+                <p class="text-xs roboto">INSTAGRAM LINK:</p>
+                <input
+                  type="url"
+                  class="w-full sm:m-3 sm:mx-5 h-[45px] text-sm px-3 outline-none border-[1.2px] rounded border-gray-300 bg-transparent"
+                />
+              </div>
+            </div>
+            <div class="w-full">
+              <div class="flex flex-col space-y-2">
+                <p class="text-xs roboto">META LINK (FORMALLY FACEBOOK):</p>
+                <input
+                  type="url"
+                  class="w-full sm:m-3 sm:mx-5 h-[45px] text-sm px-3 outline-none border-[1.2px] rounded border-gray-300 bg-transparent"
+                />
+              </div>
+            </div>
+            <a
+              href="/pages/dashboard.html"
+              class="w-full sm:pl-14 flex justify-center"
+            >
+              <button
+                class="w-full mt-5 text-white hover:bg-green-950 duration-150 rounded-md py-3 roboto text-sm bg-green-900"
+              >
+                Continue
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
